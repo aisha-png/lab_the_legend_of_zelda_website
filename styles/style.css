@@ -8,17 +8,72 @@ body {
     color: rgb(40, 91, 100);
     margin-right: auto;
     margin-left: auto;
-    width: 95%;
+    width: 90%;
     margin-top: 1%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5rem;
+    /* padding-right: 0rem; */
     display: flex;
     flex-direction: column;
 }
 
-header#header-container {
+div header#header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(94, 153, 163);
 }
+
+nav#main-menu > ul{
+    display: flex;
+    flex-direction: row;
+}
+nav#main-menu > ul > li {
+    list-style: none;
+}
+nav#main-menu > ul > li > a {
+    text-decoration: none;
+    color: honeydew;
+    display: block;
+    padding: 2rem;
+    background-color: rgb(79, 133, 143);
+    padding-right: 3rem;
+}
+nav#main-menu > ul > li > a:hover {
+    background-color: rgb(189, 152, 33);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+    background-color: rgb(81, 160, 81);
+    text-align: center;
+    
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 110px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(189, 152, 33);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
